@@ -57,15 +57,15 @@ The **Epoch Time Converter** is a Chrome extension designed to simplify the conv
 
 ### Convert Epoch to Date Popup
 
-![Convert Epoch to Date Popup]([path/to/screenshot1.png](https://imgur.com/uR8kOeB))
+![Convert Epoch to Date Popup](https://i.imgur.com/uR8kOeB.png)
 
 ### Custom Date to Epoch Modal
 
-![Custom Date to Epoch Modal]([path/to/screenshot2.png](https://imgur.com/K8zehlf))
+![Custom Date to Epoch Modal](https://i.imgur.com/K8zehlf.png)
 
 ### Options Page
 
-![Options Page]([path/to/screenshot3.png](https://imgur.com/twfH9oJ))
+![Options Page](https://i.imgur.com/twfH9oJ.png)
 
 ## Contact
 
