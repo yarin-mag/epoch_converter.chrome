@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Epoch Time Converter Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 50px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Configure Shortcuts</h1>
+    <form id="optionsForm">
+        <label>
+            Generate Date Now:
+            <input type="text" id="generateDateNow" maxlength="1" />
+            <input type="checkbox" id="generateDateNowMeta" /> Meta
+            <input type="checkbox" id="generateDateNowShift" /> Shift
+        </label>
+        <label>
+            Convert Epoch:
+            <input type="text" id="convertEpoch" maxlength="1" />
+            <input type="checkbox" id="convertEpochMeta" /> Meta
+            <input type="checkbox" id="convertEpochShift" /> Shift
+        </label>
+        <label>
+            Open Convert Modal:
+            <input type="text" id="openModal" maxlength="1" />
+            <input type="checkbox" id="openModalMetaKey" /> Meta
+            <input type="checkbox" id="openModalShift" /> Shift
+        </label>
+        <button type="button" id="saveButton">Save</button>
+    </form>
+    <script src="options.js"></script>
+</body>
+
+</html>

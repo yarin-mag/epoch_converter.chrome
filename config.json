@@ -1,0 +1,19 @@
+{
+  "shortcuts": {
+    "generateDateNow": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "O"
+    },
+    "convertEpoch": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "S"
+    },
+    "openModal": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "E"
+    }
+  }
+}
