@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch Time Converter - Settings</title>
+    <link rel="stylesheet" href="../styles/options.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="icon">⏱️</span>
+                    Epoch Time Converter
+                </h1>
+                <p class="subtitle">Customize your keyboard shortcuts</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <form id="optionsForm" class="options-form">
+                <div class="shortcut-card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <div class="card-title-group">
+                            <h2 class="card-title">Generate Date Now</h2>
+                            <p class="card-description">Copy current epoch time to clipboard</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <label class="input-label">Key</label>
+                            <input type="text" id="generateDateNow" class="key-input" maxlength="1" placeholder="O" />
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="generateDateNowMeta" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Meta (Cmd/Ctrl)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="generateDateNowShift" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Shift</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shortcut-card">
+                    <div class="card-header">
+                        <div class="card-icon">🔄</div>
+                        <div class="card-title-group">
+                            <h2 class="card-title">Convert Epoch</h2>
+                            <p class="card-description">Convert selected epoch timestamp to date</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <label class="input-label">Key</label>
+                            <input type="text" id="convertEpoch" class="key-input" maxlength="1" placeholder="S" />
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="convertEpochMeta" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Meta (Cmd/Ctrl)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="convertEpochShift" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Shift</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shortcut-card">
+                    <div class="card-header">
+                        <div class="card-icon">📅</div>
+                        <div class="card-title-group">
+                            <h2 class="card-title">Open Convert Modal</h2>
+                            <p class="card-description">Open date to epoch converter modal</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <label class="input-label">Key</label>
+                            <input type="text" id="openModal" class="key-input" maxlength="1" placeholder="M" />
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="openModalMetaKey" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Meta (Cmd/Ctrl)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="openModalShift" class="checkbox" />
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Shift</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="saveButton" class="save-button">
+                        <span class="button-icon">💾</span>
+                        <span class="button-text">Save Settings</span>
+                    </button>
+                    <div id="saveStatus" class="save-status"></div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="options.js" type="module"></script>
+</body>
+
+</html>

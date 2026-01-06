@@ -1,0 +1,17 @@
+{
+  "name": "epoch-time-converter",
+  "version": "1.0.0",
+  "description": "Convert epoch time to human-readable format",
+  "scripts": {
+    "build": "tsc && npm run bundle && npm run copy-assets",
+    "bundle": "node scripts/bundle-content.js",
+    "copy-assets": "mkdir -p dist/options dist/styles && cp src/options/options.html dist/options/ && cp src/styles/*.css dist/styles/",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "postinstall": "echo 'Run npm run build after installing dependencies'"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.3.3"
+  }
+}

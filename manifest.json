@@ -6,12 +6,12 @@
   "permissions": ["contextMenus", "scripting", "tabs", "storage", "pageCapture"],
   "host_permissions": ["<all_urls>"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "dist/background/background.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["dist/content/content.js"]
     }
   ],
   "icons": {
@@ -25,5 +25,5 @@
       "matches": ["<all_urls>"]
     }
   ],
-  "options_page": "options.html"
+  "options_page": "dist/options/options.html"
 }
